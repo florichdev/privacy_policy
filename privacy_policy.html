@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Политика конфиденциальности | FlorichDev</title>
+  <style>
+    :root {
+      --bg: #F6F7F9;
+      --surface: #FFFFFF;
+      --border: #E2E6EA;
+      --text: #111827;
+      --muted: #5B6472;
+      --accent: #1D4ED8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111413;
+        --surface: #181C1B;
+        --border: #28302E;
+        --text: #F1F5F9;
+        --muted: #94A3B8;
+        --accent: #60A5FA;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px 16px 48px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 24px;
+    }
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+    h1 { margin: 0; font-size: 22px; line-height: 1.25; }
+    h2 { margin: 24px 0 8px; font-size: 17px; }
+    p, li { color: var(--text); }
+    .muted { color: var(--muted); font-size: 13px; }
+    ul { padding-left: 20px; margin: 8px 0 12px; }
+    a { color: var(--accent); }
+    button {
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="top">
+      <div>
+        <h1 id="pageTitle">Политика конфиденциальности</h1>
+        <div class="muted" id="pageMeta">FlorichDev · Редакция от 25.11.2026</div>
+      </div>
+      <button type="button" id="langBtn">EN</button>
+    </div>
+
+    <div id="sec-ru">
+      <p>Настоящая Политика конфиденциальности действует для мобильных приложений разработчика <strong>FlorichDev</strong>, распространяемых в магазине RuStore:</p>
+      <ul>
+        <li>ФинРасчёт / ФинРасчёт PRO (<code>ru.florichdev.creditcalc</code>, <code>ru.florichdev.creditcalc.pro</code>)</li>
+        <li>ВольтМастер / ВольтМастер PRO (<code>ru.florichdev.electrician</code>, <code>ru.florichdev.electrician.pro</code>)</li>
+        <li>АвтоУчёт / АвтоУчёт PRO (<code>ru.florichdev.autocost</code>, <code>ru.florichdev.autocost.pro</code>)</li>
+        <li>РемСмета / РемСмета PRO (<code>ru.florichdev.remontcalc</code>, <code>ru.florichdev.remontcalc.pro</code>)</li>
+        <li>Мои Смены / Мои Смены PRO (<code>ru.florichdev.shifts</code>, <code>ru.florichdev.shifts.pro</code>)</li>
+      </ul>
+
+      <h2>1. Локальное хранение данных</h2>
+      <p>Все расчёты, записи, графики, сметы, настройки и резервные копии хранятся исключительно локально на устройстве пользователя (в локальном хранилище приложения). Разработчик FlorichDev не имеет собственных серверов, не требует регистрации и не собирает, не хранит и не передаёт персональные или финансовые данные пользователей.</p>
+
+      <h2>2. Отличия версий PRO и Free</h2>
+      <ul>
+        <li><strong>PRO-версии (<code>*.pro</code>):</strong> работают полностью офлайн, не содержат рекламных и аналитических SDK и не запрашивают доступ в Интернет (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>).</li>
+        <li><strong>Бесплатные версии (Free):</strong> используют рекламный SDK <strong>Яндекс Мобильная Реклама (Yandex Mobile Ads)</strong> для показа баннеров и межстраничных объявлений.</li>
+      </ul>
+
+      <h2>3. Обработка данных рекламным партнёром (только Free-версии)</h2>
+      <p>В бесплатных версиях приложений рекламный SDK ООО «ЯНДЕКС» (Yandex Mobile Ads) может автоматически обрабатывать технические данные устройства для показа и измерения эффективности рекламы: рекламный идентификатор устройства (<code>AD_ID</code>), IP-адрес, модель устройства, версию ОС, язык интерфейса и обезличенные события показа/кликов по объявлениям. Обработка регулируется Политикой конфиденциальности Яндекса: <a href="https://yandex.ru/legal/confidential/" target="_blank" rel="noopener noreferrer">https://yandex.ru/legal/confidential/</a>.</p>
+      <p>Пользователь может сбросить или ограничить использование рекламного идентификатора в настройках Android.</p>
+
+      <h2>4. Разрешения устройства</h2>
+      <ul>
+        <li><code>POST_NOTIFICATIONS</code> (ФинРасчёт, АвтоУчёт, Мои Смены): используется только для локальных напоминаний о платежах, ТО или сменах, которые настраивает сам пользователь.</li>
+        <li><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>, <code>AD_ID</code> (только Free-версии): используются исключительно для загрузки рекламы Yandex Mobile Ads.</li>
+      </ul>
+
+      <h2>5. Экспорт и удаление данных</h2>
+      <p>Пользователь в любой момент может экспортировать свои данные (CSV, JSON, PNG) стандартными средствами Android или полностью удалить их через очистку данных приложения / удаление приложения с устройства.</p>
+
+      <h2>6. Контакты разработчика</h2>
+      <p>По вопросам конфиденциальности вы можете связаться с разработчиком FlorichDev через контактный адрес, указанный на странице приложения в RuStore.</p>
+    </div>
+
+    <div id="sec-en" hidden>
+      <p>This Privacy Policy applies to mobile applications published by <strong>FlorichDev</strong> on RuStore:</p>
+      <ul>
+        <li>FinCalc / FinCalc PRO (<code>ru.florichdev.creditcalc</code>, <code>ru.florichdev.creditcalc.pro</code>)</li>
+        <li>VoltMaster / VoltMaster PRO (<code>ru.florichdev.electrician</code>, <code>ru.florichdev.electrician.pro</code>)</li>
+        <li>AutoLog / AutoLog PRO (<code>ru.florichdev.autocost</code>, <code>ru.florichdev.autocost.pro</code>)</li>
+        <li>RenoPlan / RenoPlan PRO (<code>ru.florichdev.remontcalc</code>, <code>ru.florichdev.remontcalc.pro</code>)</li>
+        <li>ShiftPay / ShiftPay PRO (<code>ru.florichdev.shifts</code>, <code>ru.florichdev.shifts.pro</code>)</li>
+      </ul>
+
+      <h2>1. Local Data Storage</h2>
+      <p>All calculations, records, schedules, estimates, preferences, and backups are stored exclusively on the user's device. FlorichDev operates no backend servers, requires no account registration, and does not collect, store, or transmit personal or financial user data.</p>
+
+      <h2>2. PRO vs. Free Versions</h2>
+      <ul>
+        <li><strong>PRO versions (<code>*.pro</code>):</strong> operate 100% offline, include zero advertising or analytics SDKs, and request no network permissions (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>).</li>
+        <li><strong>Free versions:</strong> integrate the <strong>Yandex Mobile Ads SDK</strong> to display banner and interstitial ads.</li>
+      </ul>
+
+      <h2>3. Advertising Partner Data (Free Versions Only)</h2>
+      <p>In Free versions, the Yandex Mobile Ads SDK may automatically process technical device data to serve and measure ads, including the advertising ID (<code>AD_ID</code>), IP address, device model, OS version, interface language, and anonymized ad impression/click events. Processing is governed by the Yandex Privacy Policy: <a href="https://yandex.ru/legal/confidential/" target="_blank" rel="noopener noreferrer">https://yandex.ru/legal/confidential/</a>.</p>
+      <p>You can reset or limit advertising ID usage at any time in your Android system settings.</p>
+
+      <h2>4. Device Permissions</h2>
+      <ul>
+        <li><code>POST_NOTIFICATIONS</code> (FinCalc, AutoLog, ShiftPay): used solely for local on-device reminders configured by the user.</li>
+        <li><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>, <code>AD_ID</code> (Free versions only): used exclusively to load ads via Yandex Mobile Ads.</li>
+      </ul>
+
+      <h2>5. Export and Deletion</h2>
+      <p>Users may export their local data (CSV, JSON, PNG) via standard Android sharing or erase all stored data at any time by clearing app storage or uninstalling the application.</p>
+
+      <h2>6. Developer Contact</h2>
+      <p>For privacy inquiries, please contact FlorichDev via the developer contact email listed on the RuStore app page.</p>
+    </div>
+  </main>
+  <script>
+    (function () {
+      let lang = 'ru';
+      const btn = document.getElementById('langBtn');
+      btn.addEventListener('click', function () {
+        lang = lang === 'ru' ? 'en' : 'ru';
+        document.documentElement.lang = lang;
+        document.getElementById('sec-ru').hidden = lang !== 'ru';
+        document.getElementById('sec-en').hidden = lang !== 'en';
+        document.getElementById('pageTitle').textContent = lang === 'ru' ? 'Политика конфиденциальности' : 'Privacy Policy';
+        document.getElementById('pageMeta').textContent = lang === 'ru' ? 'FlorichDev · Редакция от 25.11.2026' : 'FlorichDev · Effective 2026-11-25';
+        btn.textContent = lang === 'ru' ? 'EN' : 'RU';
+      });
+    })();
+  </script>
+</body>
+</html>
+
